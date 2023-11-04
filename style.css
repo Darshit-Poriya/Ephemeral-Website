@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nimbus Sans L'
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+}
+
+#nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3vw 7vw;
+}
+
+#nav a {
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#nleft {
+    display: flex;
+    gap: 30px;
+}
+
+/* ? To make it at the center of the nav bar */
+#nav #centeratag {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 12vw;
+    padding: 0 7vw;
+    /* ? To Look Content Align Along with NavBar */
+}
+
+#sustain {
+    width: 10vw;
+    /* ? Wrap children inside the parent to avoid overflow */
+}
+
+#sustain p {
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 500;
+    opacity: .7;
+    margin: 7px 0;
+}
+
+#sustain #susimagewrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 13vw;
+}
+
+#susimagewrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#ephemeral {
+    position: relative;
+    width: 27vw;
+    min-height: 45vw;
+    /* ? Div ne Extend karva mate (Important to understand) : Motive Div ana pachi start thay atle */
+}
+
+#imgntext {
+    width: fit-content;
+    height: fit-content;
+}
+
+#ephemeral p {
+    margin-top: 25px;
+    width: 45%;
+    font-size: 1vw;
+    line-height: 1.3;
+    letter-spacing: -.03vw;
+    /* ? Letter ni vache space adjust karva mate */
+}
+
+#ephemeral img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#ephemeral h1 {
+    top: -20%;
+    left: -20%;
+    font-size: 5vw;
+    font-weight: 400;
+    letter-spacing: -.4vw;
+    line-height: 1;
+}
+
+#ephemeral #headings {
+    position: absolute;
+    top: -18%;
+    left: -15%;
+}
+
+#visit {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+#circlev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    border: 2px solid #5e5e5e;
+}
+
+#circlev i {
+    color: #5e5e5e;
+    font-weight: 700;
+}
+
+#visit p {
+    opacity: 0.8;
+    color: #5e5e5e;
+}
+
+#motive {
+    margin-top: 5vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 7vw;
+}
+
+#motive p {
+    line-height: 1.6;
+    letter-spacing: -.06vw;
+    width: 85%;
+    text-align: right;
+    font-size: 1.5vw;
+}
+
+/* ? Div - New line ma component banave che, Span - Ek j line ma component rakhe che */
+
+/* ? Span tag ne height and width apva mate display inline block lakhvu jaruri che */
+#motive span {
+    display: inline-block;
+    border-radius: 100px;
+    margin: 0 10px;
+    margin-bottom: -15px;
+    margin-top: 10px;
+}
+
+#ones {
+    height: 60px;
+    width: 100px;
+    background-image: url('bluegirl.jpg');
+    background-size: cover;
+    background-position: 0% 55%;
+}
+
+#twos {
+    height: 50px;
+    width: 80px;
+    background-image: url('shaljam.jpg');
+    background-size: cover;
+    background-position: 0% 50%;
+}
+
+#threes {
+    height: 50px;
+    width: 70px;
+    background-image: url('grass.jpg');
+    background-size: cover;
+    background-position: 0% 50%;
+    /* ? X and Y axis upar set karva mate percentage no use thay! */
+}
+
+#pictures {
+    display: flex;
+    justify-content: space-between;
+    /* ? Banne picture ne baju baju ma aave tena mate */
+    margin-top: 8vw;
+    padding: 3vw;
+    padding-left: 14vw;
+    padding-right: 12vw;
+}
+
+#picimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ? Inner component parent ni inside rahe tena mate*/
+#firstpic {
+    width: 17vw;
+}
+
+#firstpic #picimg {
+    width: 100%;
+    height: 24vw;
+    margin-bottom: 1vw;
+}
+
+#firstpic h1,
+#secpic h1 {
+    letter-spacing: -.1vw;
+    font-weight: 200;
+    font-size: 2vw;
+}
+
+#firstpic p,
+#secpic p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#secpic {
+    width: 22vw;
+    /* ? Right side align karva mate */
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#secpic #picimg {
+    width: 100%;
+    height: 37vw;
+    margin-bottom: 1vw;
+}
+
+#secpic p {
+    width: 75%;
+    text-align: righ t;
+}
+
+#banner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 8vw;
+}
+
+#bimg {
+    width: 65%;
+    height: 60vh;
+}
+
+#bimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 65%;
+    /* ? Photo ne X and Y axis upar set karva mate */
+}
+
+#btext {
+    width: 35%;
+    padding: 0 3vw;
+}
+
+#btext h1 {
+    font-size: 2.4vw;
+    font-weight: 400;
+    letter-spacing: -.1vw;
+    line-height: 1;
+}
+
+#btext p {
+    margin-top: 10px;
+    width: 65%;
+    font-size: 1vw;
+}
+
+#future {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+#future video {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+/* ? ftext upar click karva mate */
+#ftext {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 9999;
+    padding: 1vw 1.3vw;
+    border: 1px solid rgb(125, 125, 125);
+    border-radius: 20px;
+}
+
+#ftext h1 {
+    text-transform: capitalize;
+    color: black;
+}
+
+#ftext button {
+    padding: 1vw 1.3vw;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-radius: 100px;
+    border: 2px solid rgb(148, 148, 148);
+    margin-top: 10px;
+}
